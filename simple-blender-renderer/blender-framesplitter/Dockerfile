@@ -8,6 +8,6 @@ RUN pip3 install --upgrade pip
 
 RUN pip3 install opencv-python requests imutils numpy pyminizip
 
-ADD blend_render.py /blend_render.py
+ADD blend_splitter.py /blend_splitter.py
 
-ADD render.py /render.py
+ADD splitter.py /splitter.py

@@ -4,8 +4,6 @@ import sys
 
 pfs_source = f"/pfs/{sys.argv[1]}"
 
-print('pfs_source ', pfs_source)
-
 def split_blend(source):
     print(source)
     job_id = source.split("/")[-1]

@@ -19,7 +19,6 @@
     ]
   },
   "transform": {
-    "image_pull_secrets": ["laneonekey"],
     "cmd": ["python3", "/render.py", "blends", "splitter"],
     "image": "laneone/distributed-blender-renderer"
   }

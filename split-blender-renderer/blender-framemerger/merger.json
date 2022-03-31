@@ -9,7 +9,6 @@
     }
   },
   "transform": {
-    "image_pull_secrets": ["laneonekey"],
     "cmd": ["python3", "/merger.py", "renderer"],
     "image": "laneone/distributed-blender-merger"
   }

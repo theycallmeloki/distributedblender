@@ -1,0 +1,26 @@
+{
+  "pipeline": {
+    "name": "renderer"
+  },
+  "input": {
+    "cross": [
+      {
+        "pfs": {
+          "glob": "/*",
+          "repo": "blends"
+        }
+      },
+      {
+        "pfs": {
+          "glob": "/*/*",
+          "repo": "splitter"
+        }
+      }
+    ]
+  },
+  "transform": {
+    "image_pull_secrets": ["laneonekey"],
+    "cmd": ["python3", "/render.py", "blends", "splitter"],
+    "image": "laneone/simple-distributed-blender-renderer"
+  }
+}

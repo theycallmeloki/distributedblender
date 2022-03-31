@@ -1,0 +1,16 @@
+{
+  "pipeline": {
+    "name": "splitter"
+  },
+  "input": {
+    "pfs": {
+      "glob": "/*",
+      "repo": "blends"
+    }
+  },
+  "transform": {
+    "image_pull_secrets": ["laneonekey"],
+    "cmd": ["python3", "/splitter.py", "blends"],
+    "image": "laneone/simple-distributed-blender-splitter"
+  }
+}
